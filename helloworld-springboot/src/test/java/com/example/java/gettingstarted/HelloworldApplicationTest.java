@@ -105,15 +105,15 @@ public class HelloworldApplicationTest {
   //          .andExpect(jsonPath("$.lat", is("1")));
   // }
 
-  @Test // Test case 6: request - process - return JSON
-  public void testStartup3() throws Exception {
-    mockMvc.perform(get("/test3?did=1"))
-           .andExpect(MockMvcResultMatchers.status().isOk())
-           .andExpect(content().contentType(new MediaType(MediaType.APPLICATION_JSON.getType(),
-                                            MediaType.APPLICATION_JSON.getSubtype(),
-                                            Charset.forName("utf8")
-                                            )))
-           .andExpect(jsonPath("$.lat", is("iphone")));
-  }
+  // @Test // Test case 6: request - process - return JSON
+  // public void testStartup3() throws Exception {
+  //   mockMvc.perform(get("/test3?did=1"))
+  //          .andExpect(MockMvcResultMatchers.status().isOk())
+  //          .andExpect(content().contentType(new MediaType(MediaType.APPLICATION_JSON.getType(),
+  //                                           MediaType.APPLICATION_JSON.getSubtype(),
+  //                                           Charset.forName("utf8")
+  //                                           )))
+  //          .andExpect(jsonPath("$.lat", is("iphone")));
+  // }
 
 }

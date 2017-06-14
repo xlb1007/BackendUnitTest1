@@ -10,10 +10,10 @@ public class Facility {
   private String description;
 // [END Facility]
 // [START keys]
+  public static final String FID = "fid";
   public static final String GID = "gid";
   public static final String TID = "tid";
   public static final String DESCRIPTION = "description";
-  public static final String FID = "fid";
 // [END keys]
 // [START constructor]
   // We use a Builder pattern here to simplify and standardize construction of Facility objects.
